@@ -1,0 +1,34 @@
+/*--niceSelect plugin css. On change here may need change in centraladmin.php, because they use similar styling--*/
+/*--type:color--*/
+.wrap_niceSelect.color{width:144px;}
+.wrap_niceSelect.color .all-color-icon {background: linear-gradient(#1e5799 0%,#d628bc 12%,#fbff30 24%,#207cca 34%,#ff3033 45%,#58fc55 59%,#6d5014 72%,#2924bf 81%,#38931c 90%,#cc00c5 100%);}
+.wrap_ul_niceSelect.color li{width: 21px;height: 21px;margin: 10px 0px 0px 10px;border: 1px solid #D2D2D2;text-align: center;cursor: pointer;display: inline-block;position: relative;}
+.wrap_ul_niceSelect.color li{width: 21px;height: 21px;margin: 10px 0px 0px 10px;border: 1px solid #D2D2D2;text-align: center;cursor: pointer;display: inline-block;position: relative;}
+.wrap_ul_niceSelect.color li.hover_option {border-color:#808080;}
+.wrap_ul_niceSelect.color li span{width: 21px;height: 21px;display: block;position: absolute;}
+/*--*/
+.wrap_niceSelect{position:relative;height: 23px;font-size: 12px;}
+.filter_niceSelect{margin: 5px 0px 5px 0px;}
+.filter_niceSelect input{font-size: 12px;display: block;margin: 0 auto;width: 71%;padding: 1px;padding-left: 10%;border: 1px solid #FCC89D;border-radius: 4px;-webkit-border-radius: 4px;}
+.filter_niceSelect input:focus {outline: none;border: 1px solid #FF9F4E;box-shadow: 0px 0px 8px #FF9F4E;-webkit-box-shadow: 0px 0px 8px #FF9F4E;}
+.filter_niceSelect span{width: 11px;height: 11px;background-size: contain;display: block;position: absolute;top: 8px;left: 10%;background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSIyNHB4IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48dGl0bGUvPjxkZXNjLz48ZGVmcy8+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBpZD0ibWl1IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSI+PGcgaWQ9IkFydGJvYXJkLTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01MzkuMDAwMDAwLCAtNDA3LjAwMDAwMCkiPjxnIGlkPSJzbGljZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjE1LjAwMDAwMCwgMTE5LjAwMDAwMCkiLz48cGF0aCBkPSJNNTU1LjQ3NzI3Niw0MjEuMzU1OTU2IEM1NTYuNDM3MTIsNDE5Ljk3OTM4MyA1NTcsNDE4LjMwNTQyNSA1NTcsNDE2LjUgQzU1Nyw0MTEuODA1NTc5IDU1My4xOTQ0MjEsNDA4IDU0OC41LDQwOCBDNTQzLjgwNTU3OSw0MDggNTQwLDQxMS44MDU1NzkgNTQwLDQxNi41IEM1NDAsNDIxLjE5NDQyMSA1NDMuODA1NTc5LDQyNSA1NDguNSw0MjUgQzU1MC4zMDUxNDgsNDI1IDU1MS45Nzg4NjgsNDI0LjQzNzI5MyA1NTMuMzU1MzIxLDQyMy40Nzc3MTkgTDU1My4zNTU4OTIsNDIzLjQ3NzIxMiBMNTU5LjY1OTQzMyw0MjkuNzgwNzUzIEM1NTkuNzc2MzA5LDQyOS44OTc2MjkgNTU5Ljk2MjIwNiw0MjkuOTAxMjI1IDU2MC4wODIyMTEsNDI5Ljc4MTIyIEw1NjEuNzgxMjIsNDI4LjA4MjIxMSBDNTYxLjg5NzgzOCw0MjcuOTY1NTkzIDU2MS44OTI0MTcsNDI3Ljc3MTA5NyA1NjEuNzgwNzUzLDQyNy42NTk0MzMgTDU1NS40NzcyNzYsNDIxLjM1NTk1NiBaIE01NDguNSw0MjMgQzU1Mi4wODk4NTEsNDIzIDU1NSw0MjAuMDg5ODUxIDU1NSw0MTYuNSBDNTU1LDQxMi45MTAxNDkgNTUyLjA4OTg1MSw0MTAgNTQ4LjUsNDEwIEM1NDQuOTEwMTQ5LDQxMCA1NDIsNDEyLjkxMDE0OSA1NDIsNDE2LjUgQzU0Miw0MjAuMDg5ODUxIDU0NC45MTAxNDksNDIzIDU0OC41LDQyMyBaIiBmaWxsPSIjRkJCNzdFIiBpZD0iY29tbW9uLXNlYXJjaC1sb29rdXAtZ2x5cGgiLz48L2c+PC9nPjwvc3ZnPg==");}
+.select_niceSelect, .wrap_ul_niceSelect{width:100%}
+.select_niceSelect.openSelect{border-bottom: 0 white !important;}
+.select_niceSelect.openSelect .arrow_1{border-width: 0 5px 6px 5px;border-color: transparent transparent #808080 transparent;}
+.select_niceSelect.openSelect .arrow_1.hover_arrow{border-color: transparent transparent  #414141 transparent !important;}
+.select_niceSelect .arrow_niceSelect{width: 0;height: 0;border-style: solid;position: absolute;}
+.select_niceSelect .arrow_1{border-width: 6px 5px 0 5px;border-color: #808080 transparent transparent transparent;top: 8px;right: 7px;}
+.select_niceSelect .arrow_1.hover_arrow{border-color:#414141 transparent transparent transparent !important;}
+.select_niceSelect.openSelect .arrow_2{border-width: 0 4px 5px 4px;top: 10px;border-color: transparent transparent white transparent;}
+.select_niceSelect .arrow_2{top: 7px;right: 8px;border-width: 5px 4px 0 4px;border-color: white transparent transparent transparent;}
+.select_niceSelect{display: block;background: white;border: 1px solid grey;position: absolute;cursor: pointer;}
+.wrap_ul_niceSelect{display: none;border-radius: 0px 0px 4px 4px;border: 1px solid grey;border-top-width: 0;top: 21px;position: absolute;z-index: 999999;background-color: #fff;}
+.wrap_ul_niceSelect ul{text-align: left;margin-bottom: 10px;list-style-type: none;overflow: auto;max-height: 200px;}
+.wrap_ul_niceSelect .selected_option {position: absolute;display: none;width: 21px;line-height: 21px;font-size: 17px;color: #fff;text-shadow: 1px 0 2px rgba(0, 0, 0, 0.3);}
+.wrap_ul_niceSelect ul::-webkit-scrollbar {width: 6px;}
+.wrap_ul_niceSelect ul::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);border-radius: 6px;}
+.wrap_ul_niceSelect ul::-webkit-scrollbar-thumb {border-radius: 10px;-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);}
+.submit_niceSelect{margin: 0 auto;margin-bottom: 10px;text-align: center;line-height: 25px;background: #FF7400;font-size: 15px;color: #FFFFFF;text-transform: capitalize;cursor: pointer;width:120px}
+.submit_niceSelect:hover{background-color: #E76900;}
+.firstValue_niceSelect{text-align: left;min-height: 15px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;width:88%;padding: 3px 7px 3px 7px;}
+/*--end niceSelect plugin css--*/

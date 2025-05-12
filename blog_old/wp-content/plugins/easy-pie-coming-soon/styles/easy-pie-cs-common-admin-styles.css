@@ -1,0 +1,14 @@
+.easy-pie-cs-on > a { 
+    background-color: rgb(220, 50, 50)!important;
+    color: #fff!important;
+    font-weight: bold!important;        
+}
+
+.easy-pie-cs-on > a:hover { 
+    background-color: black!important;
+    color: #00b9eb!important;
+}
+
+/*Section Titles*/
+h3.ezp-cspe-subtitle {border-bottom: 1px solid #dfdfdf;  padding:0 0 6px 8px; margin:-3px 0 0 -10px; font-size:19px; font-weight: bold }
+div.ezp-cspe-subtitle2 { font-weight: bold; font-size:15px; margin-top:25px}

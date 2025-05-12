@@ -1,0 +1,168 @@
+<?php
+##########################################################
+#####     CREATED BY   : rajeshkumar.maurya@gmail.com    ######
+#####          CREATION DATE: PUT DATE              ######
+#####     CODE BRIEFING: PUT THE PAGE FUNCTIONALITY ######
+#####                                              ######
+#####     COMPANY           : baratotravels    ######
+#####                                               ######
+##########################################################
+include_once("session.php");
+include_once("../config.inc.php");
+include_once("../functions/functions.php");
+include_once("../functions/functions.inc.php");
+include_once("../includes/db.inc.php");
+?>
+  <!-- /.navbar -->
+<?php  include_once("includes/header.php"); ?>
+  <!-- Main Sidebar Container -->
+<?php  include_once("includes/menu.php"); ?>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <!-- /.col -->
+          <!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+      
+      <div class="card">
+            <div class="card-header">
+              <h3 class="card-title float-left">Video</h3>
+              
+              <button type="button" class="btn btn-success float-right" data-toggle="modal" data-target="#myModal"><i class="fas fa-plus"></i> Add Video</button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          <div class="form-group col-md-12 float-left">
+                        <label>Enter Video Url</label>
+                        <input type="text" class="form-control" placeholder="Enter Video Url ...">
+                  </div>
+        </div>
+        <div class="modal-footer">
+        	<button type="button" class="btn btn-success" data-dismiss="modal">Update</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
+
+
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th>S. No.</th>
+                  <th>Video</th>
+                  <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td width="10%">1</td>
+                  <td><img src="dist/img/user3-128x128.jpg" width="50" height="50"></td>
+                  <td width="40%"><button type="button" class="btn btn-success"><i class="fas fa-edit"></i> Edit</button> <button type="button" class="btn btn-primary"><i class="fas fa-random"></i> Set Serial Number</button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i> Delete</button></td>
+                </tr>
+                <tr>
+                  <td width="10%">2</td>
+                  <td><img src="dist/img/user3-128x128.jpg" width="50" height="50"></td>
+                  <td width="40%"><button type="button" class="btn btn-success"><i class="fas fa-edit"></i> Edit</button> <button type="button" class="btn btn-primary"><i class="fas fa-random"></i> Set Serial Number</button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i> Delete</button></td>
+                </tr>
+                <tr>
+                  <td width="10%">3</td>
+                  <td><img src="dist/img/user3-128x128.jpg" width="50" height="50"></td>
+                  <td width="40%"><button type="button" class="btn btn-success"><i class="fas fa-edit"></i> Edit</button> <button type="button" class="btn btn-primary"><i class="fas fa-random"></i> Set Serial Number</button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i> Delete</button></td>
+                </tr>
+                <tr>
+                  <td width="10%">4</td>
+                  <td><img src="dist/img/user3-128x128.jpg" width="50" height="50"></td>
+                  <td width="40%"><button type="button" class="btn btn-success"><i class="fas fa-edit"></i> Edit</button> <button type="button" class="btn btn-primary"><i class="fas fa-random"></i> Set Serial Number</button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i> Delete</button></td>
+                </tr>
+                <tr>
+                  <td width="10%">5</td>
+                  <td><img src="dist/img/user3-128x128.jpg" width="50" height="50"></td>
+                  <td width="40%"><button type="button" class="btn btn-success"><i class="fas fa-edit"></i> Edit</button> <button type="button" class="btn btn-primary"><i class="fas fa-random"></i> Set Serial Number</button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i> Delete</button></td>
+                </tr>
+                <tr>
+                  <td width="10%">6</td>
+                  <td><img src="dist/img/user3-128x128.jpg" width="50" height="50"></td>
+                  <td width="40%"><button type="button" class="btn btn-success"><i class="fas fa-edit"></i> Edit</button> <button type="button" class="btn btn-primary"><i class="fas fa-random"></i> Set Serial Number</button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i> Delete</button></td>
+                </tr>
+                <tr>
+                  <td width="10%">7</td>
+                  <td><img src="dist/img/user3-128x128.jpg" width="50" height="50"></td>
+                  <td width="40%"><button type="button" class="btn btn-success"><i class="fas fa-edit"></i> Edit</button> <button type="button" class="btn btn-primary"><i class="fas fa-random"></i> Set Serial Number</button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i> Delete</button></td>
+                </tr>
+                <tr>
+                  <td width="10%">8</td>
+                  <td><img src="dist/img/user3-128x128.jpg" width="50" height="50"></td>
+                  <td width="40%"><button type="button" class="btn btn-success"><i class="fas fa-edit"></i> Edit</button> <button type="button" class="btn btn-primary"><i class="fas fa-random"></i> Set Serial Number</button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i> Delete</button></td>
+                </tr>
+                </tbody>
+                
+              </table>
+            </div>
+            <!-- /.card-body -->
+          </div>
+        
+      </div><!--/. container-fluid -->
+    </section>
+    
+    
+    
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+<?php  include_once("includes/footer.php"); ?>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Select2 -->
+<script src="plugins/select2/js/select2.full.min.js"></script>
+<!-- InputMask -->
+<script src="plugins/inputmask/jquery.inputmask.bundle.js"></script>
+<script src="plugins/moment/moment.min.js"></script>
+<!-- date-range-picker -->
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap color picker -->
+<script src="plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- FastClick -->
+<script src="plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>

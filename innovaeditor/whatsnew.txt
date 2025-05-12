@@ -1,0 +1,142 @@
+What's new in 1.7.3
+- IE11 Compatibility
+- Fix youtube insert video bug
+- Fix apply fontsize issue in Chrome.
+- Jumping issue when paste content in Chrome.
+
+What's New in 1.7.2.1
+- Fix ToolbarMode bug in aspnet
+- Fix bug with protocol selection in Link Dialog.
+- Fix bug in insertLink() function, target not being inserted in Chrome/Safari.
+- Asset Manager is moved outside the editor folder (since it is an optional addon). You can find Asset Manager in /AddOns/ folder.
+- Clean-up unused files.
+- Some properties are disabled by default:
+    - enableFlickr
+    - enableLightbox
+	- enableCssButtons
+    - enableTableAutoformat
+- Some buttons are excluded from default configuration (you can include them in the toolbar configuration):
+	- YoutubeDialog
+	- Emoticons
+	- Quote
+- Remove Dimension tab on Youtube dialog for responsive support
+- Fix table layout problem in IE10
+- Other minor fixes.
+
+What's New in 1.7.2
+- Fix custom dropdown button bug.
+- add new protocol option to link dialog
+- add reset dimension and maintain image ratio in image dialog
+- Fix dialog bug in IE10.
+- add bookmark dialog
+- add preview dialog
+- Fix color picker zindex problem.
+- Fix asset manager bug: file browser doesnt show file with extension in upper case
+- Asset manager image preview is now fixed at the top.
+- Fix strong replace with span/style in FF.
+- Fix update link in IE: editor inserts full link instead of updating existing selected link.
+- New property: enableImageStyles and enableYTVideoStyles to disable Styles tab in Image and Youtube Dialog.
+- Enter from H1 now back to p,div or br.
+- Allow multiple styleprefix (comma separated, no space between value).
+- Fix apply font size with multiple paragraph selected.
+- Add new setDialogSize() function.
+
+What's New in 1.7.1
+- Multiple external css file
+- Custom dropdown button
+- Updated documentation
+- Update dll (for ASPNET)
+- Fix link/bookmark insert bug
+
+What's New in 1.7
+- Updated documentation
+- upload filetypes is configurable in upload.asp, upload.ashx and config.php(for php version)
+- New property to disable editor focus on first load.
+- New quick table insert button (button name Table).
+- New 'Name' field in Hyperlink Dialog to create bookmark.
+
+- Fix apply font size bug. Previouly apply font size on selected text only affect first paragraph.
+- Fix bug with 'Link to new window' option in Hyperlink dialog.
+- Other bug fixes
+
+What's New in 1.6.1
+- Fix focus after inserting table.
+- Editor for .NET update (new CSSPrefix property).
+- Fix undo issue on Safari.
+- Some translation update.
+- Lightbox fix to support html5.
+- Some minor fixes.
+
+
+What's New in 1.6
+- Fix table cell focus issue in IE.
+- Fix doctype in source editor.
+- Inserting table now uses nbsp; in each cell, with <br /> before & after the table.
+- New sv-SE language files (Special thanks to Anette Jonsson)
+- Reset image align
+- New cell Formatting
+- Complete margin setting for image
+- Some important fixes
+
+
+What's New in 1.5
+- Improved table realtime
+- New 'Clear' text shadow
+- Some important fixes
+
+
+What's New in 1.4
+- New File Browser Interface
+- Fix Font Size on Text Dialog
+- New "Quote" button
+  Sample "Quote" Usage:
+    oEdit1.groups = [
+            ["group1", "", ["Bold", "Italic", "Underline", "CompleteTextDialog", "ForeColor", "RemoveFormat"]],
+            ["group2", "", ["Bullets", "Numbering", "JustifyLeft", "JustifyCenter", "JustifyRight"]],
+            ["group3", "", ["LinkDialog", "ImageDialog", "YoutubeDialog", "TableDialog", "Emoticons", "Quote"]],
+            ["group4", "", ["Undo", "Redo", "FullScreen", "SourceDialog"]]
+            ];
+- Some important fixes
+
+
+What's New in 1.3
+- Table Cells Alignment
+- Option to disable Css Buttons on the Link Dialog:
+        oEdit1.enableCssButtons = false;
+- Option to disable "Open in a Lightbox" on the Link & Image Dialog:
+        oEdit1.enableLightbox = false;
+- Option to disable Table Autoformat on the Table Dialog:
+        oEdit1.enableTableAutoformat = false;
+- Some important fixes
+
+
+What's New in 1.2
+- New Dialog: "CompleteTextDialog".
+  Sample "CompleteTextDialog" Usage:
+    oEdit1.groups = [
+            ["group1", "", ["Bold", "Italic", "Underline", "CompleteTextDialog", "ForeColor", "RemoveFormat"]],
+            ["group2", "", ["Bullets", "Numbering", "JustifyLeft", "JustifyCenter", "JustifyRight"]],
+            ["group3", "", ["LinkDialog", "ImageDialog", "YoutubeDialog", "TableDialog", "Emoticons"]],
+            ["group4", "", ["Undo", "Redo", "FullScreen", "SourceDialog"]]
+            ];
+- Updated Danish translation
+- Fix problem related with <p>, <div> & <br />
+- Other Important fixes (including youtube z-index fix)
+
+
+What's New in 1.1
+- New File Manager (See documentation / default.htm)
+- New "Paste" button, includes:
+    - Normal Paste (CTRL-V): will clean-up Word's specific tags/formatting 
+    - Paste text
+- New Table's Text Color & Width settings
+- New Image width/height settings
+- New Danish translation
+- New property: enableFlickr (to enable/disable Flickr image browser)
+    oEdit1.enableFlickr = false;    
+- New property: flickrUser (to specify Flickr username).
+    oEdit1.flickrUser = "USERNAME";
+- Fix HTML source editing bug in Chrome
+- Fix lost font formatting when applying font size
+- Fix missing table guideline in IE
+- Fix missing/incorrect hover captions

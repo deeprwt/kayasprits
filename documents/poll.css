@@ -1,0 +1,31 @@
+.bar{height:10px;background:#3399cc;}
+.loader{display:none;text-align:center;}
+.option{margin:5px 0;}
+.option p{line-height:1.1em;}
+.yourvote{background:#113399;}
+
+.multi .bar1{background:#ff9900 !important;}
+.multi .bar2{background:#66cc00 !important;}
+.multi .bar3{background:#3399cc !important;}
+.multi .bar4{background:#dd0000 !important;}
+.multi .bar5{background:#800080 !important;}
+.multi .bar6{background:#003951 !important;}
+
+/*Template1*/
+.template1{min-width:250px;display:inline-block;background: #FFFFFF;border-radius: 6px;margin:10px;border: 1px solid #eeeeee;}
+.template1 h1{margin:0; padding:5px;font: 17px Georgia,'Times New Roman',Times,serif;color:#333333;}
+.template1 p{margin:0;line-height:2em;font-family:Georgia,'Times New Roman',Times,serif;color:#333333;}
+.template1 .pc{background: #F9F9F9;padding:5px;margin:5px;border: 1px solid #f3f3f3;}
+
+/*Template2*/
+.template2{min-width:250px;display:inline-block;background: #71CAFF;background: -webkit-radial-gradient(center, ellipse cover,#71CAFF 1%,#3A93D0 100%);background: -ms-radial-gradient(center, ellipse cover,#71CAFF 1%,#3A93D0 100%);background: radial-gradient(ellipse at center,#71CAFF 1%,#3A93D0 100%);-svg-background: linear-gradient(top,#71CAFF 1%,#3A93D0 100%);border-radius: 6px;margin:10px;border: 1px solid #7c7c7c;}
+.template2 h1{margin:0; padding:5px;font: bold 17px/20px Arial, Helvetica, sans-serif;color:#D7EBF9;}
+.template2 p{margin:0;line-height:2em;font: bold 14px Arial, Helvetica, sans-serif;color:#D7EBF9;}
+.template2 .pc{padding:5px;margin:5px;}
+
+/*Template3*/
+.template3{min-width:250px;display:inline-block;background: #696969;background: -webkit-radial-gradient(center, ellipse cover,#696969 0%,#363636 98%);background: -ms-radial-gradient(center, ellipse cover,#696969 0%,#363636 98%);background: radial-gradient(ellipse at center,#696969 0%,#363636 98%);-svg-background: linear-gradient(top,#696969 0%,#363636 98%);border-radius: 6px;margin:10px;border: 1px solid #141414;}
+.template3 h1{margin:0; padding:5px;font: bold 17px/20px Arial, Helvetica, sans-serif;color:#FFFFFF;}
+.template3 p{margin:0;line-height:2em;font-family:Arial, Helvetica, sans-serif;color:#FFFFFF;}
+.template3 .pc{background: #505050;padding:5px;margin:5px;border: 1px solid #101010;}
+

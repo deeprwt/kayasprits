@@ -1,0 +1,109 @@
+/*
+    Document   : livbiew
+    Created on : Nov 19, 2013, 6:49:55 PM
+    Author     : Joe
+*/
+
+root {
+    display: block;
+}
+
+/*::-webkit-input-placeholder { font-size: smaller; }*/
+/*::-moz-placeholder {  font-size: smaller; }  firefox 19+ */
+/*:-ms-input-placeholder {  font-size: smaller; }  ie */
+/*input:-moz-placeholder {  font-size: smaller; }*/
+
+body{font-family: verdana; font-size: 11px;}
+input[type="file"] {margin:0;}
+.container, .fileslist {width: 100%;}
+.mediafolder {display:none;width:30%;margin: 0px auto;border-radius: 2px;background: #CCC;text-align: center;
+			  min-height: 25px;line-height: 25px;word-break: break-all;}
+.fileuploader{border-radius: 2px;background: #DDD;padding: 4px;word-break: break-all;height:42px;}
+#resizeVal{width:25px;font-size:smaller;}
+#progress_report_bar{width: 100%;margin: 0 auto;display: none;}
+#progress_report_status{font-style: italic;}
+#resizeZone{position:absolute;top:36px;right:17px;height:19px;}
+#resizeChecker{vertical-align:middle;}
+#drop-zone{font-style: italic;font-family: monospace;border-top: dotted 1px;}
+.listheading{
+	width:100%;
+	border-radius: 3px 3px 0 0;
+	background: #eee;
+	margin-top: 2px;
+	padding:2px 0;
+	font-weight: bold;}
+.mediacheck{width:50px;text-align: center;float: left;}
+.mediadata{width: 50%; text-align: left; float: left;}
+.mediastatus{width:19%; text-align: center; float: left;}
+/*.mediafile{width:100%; padding: 5px 0;}*/
+.mediafile {border-top: 1px solid #FFFFFF;padding: 2px 0 1px;width: 100%;}
+.padded{padding: 10px 0;}
+.entryhref{color:inherit;text-decoration: none;cursor: pointer;}
+.mediaimg{width:50px; float:left;}
+.mediatext{float:left; margin-left: 5px; width: 75%; word-wrap: break-word;}
+.entrynavElem{text-decoration: underline; cursor: pointer;font-size:10px;}
+.entrynav{margin-top:5px;}
+.listfooter{width:99%; border-radius: 0 0 3px 3px; background: #eee;margin-bottom: 4px; padding:2px 0;}
+.delete_btn,.addFldr_btn{margin-left: 5px;}
+.img-thumb{max-width:50px;}
+/*.even-row{background: #DDD;}
+.odd-row{background: #EEE;}*/
+.hovered{background: #ebebeb;}
+.hidden{visibility: hidden;}
+.gone{display: none;}
+.clear-both{clear: both;}
+.libview_stack{margin-left: 0.3em;}
+.libview_level_up{margin-top: 0.1em;left: 0.1em;}
+.selectedData {background: #eee;}
+
+
+/* min view customization */
+.img-thumb-min{width: 20px;}
+.mediaimg-min{width: 20px; float: left;}
+.libview_folder-min{width: 1.3em;}
+.libview_level_up-min{font-size: 0.5em; top: 0; left: -0.2em;}
+
+
+/* thumb view customization */
+.mediafile-thumb{width:91px; height: 91px; padding: 10px; float: left; overflow: hidden;}
+.img-thumb-big{max-width: 150%;}
+.mediaimg-thumb{width:100%;height:100%;float:left;border: #FFF 5px solid;box-shadow: 0 1px 4px #CCC;overflow: hidden;}
+.mediadata-thumb{width: 100%;height: 100%;text-align: left;float: left;}
+.mediastatus-thumb{width: 100%; font-size: 0.8em;}
+.mediafile-thumb .mediatext-thumb{word-break: break-all;position: absolute; visibility: hidden; width: 91px; margin: 5px; font-size: 10px; background: rgba(237,237,237,0.8)}
+.mediafile-thumb:hover .mediatext-thumb{visibility: visible;}
+.libview_level_up-thumb{font-size: 3em;top: 0.58em;}
+.libview_folder-thumb{font-size: 5em;}
+.libview_stack-thumb{width: 5em;height: 5em;}
+.mediadata-thumb .mediatext{margin-top: -41px;}
+
+.filterssection .fa{font-size: 14px !important;}
+
+/*extra css for scrolling*/
+.fileslist{top:82px; bottom:34px;overflow-y:scroll;position:absolute;width:99%;}
+body,html{height:95%;margin:2px;}
+.container{height:100%;}
+.listfooter{position:fixed; bottom: 0;width:99%;}
+
+#progress_report{position: absolute;right: 8px;top: 6px;}
+#drop-zone {margin-top: 5px;}
+
+/* nav */
+.navigation{float: right;margin:4px;}
+.naventry{background:none; border-radius: 4px; width: 20px; text-align: center;
+		 float: left; cursor: pointer;}
+.activeNav{background: #DDD;}
+
+/* filters */
+.filterssection{left: 55px;position: absolute;top: 58px;right:6px;}
+#libsearch{width: 100%; font-size: 11px;}
+.typeFilters{float:left; margin-right: 17px;line-height: 19px;}
+.typeFilter{text-decoration: none; cursor: pointer;}
+.underlined{text-decoration: underline !important;}
+.searcharea{float: right; margin-right:4px;}
+#libsearch{padding:1px;margin:0;}
+.vmodes, .vmode {float: left;}
+.vmode:first-of-type{display: none;}
+.vmodes{margin-top: 2px;}
+.vmode{cursor: pointer; margin: 0 5px;}
+.selectedFilter{border-bottom: solid 1px;}

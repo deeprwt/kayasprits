@@ -1,0 +1,82 @@
+.slideshow2_ct{display:inline-block;}
+.slideshow2_imgs_navigation, .slideshow2_thumb_navigation {
+	float: left;
+	display: inline-block;
+	margin:0;
+	padding: 0;
+	transition-property: transform;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+	max-width: none !important;
+	transform: translate(0, 0);
+}
+.slideshow2_imgs_navigation div, .slideshow2_thumb_wrap img{
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+	float:left;
+	padding: 0 !important;
+	margin: auto !important;
+	transform: translate(0, 0);
+}
+.slideshow2_imgs_navigation div{background-repeat:no-repeat;background-position:center center;}
+.slideshow2_imgs_wrap, .slideshow2_thumb_wrap{
+  overflow: hidden;
+  max-width: none !important;
+}
+.slideshow2_title{
+	text-align:right !important;
+	vertical-align:middle;
+	padding-right:12px;
+}
+.slideshow2_title span{
+	font: 23px/40px tahoma;
+	color:white;
+}
+.slideshow2_imgs_navigation:hover, .slideshow2_thumb_navigation:hover{cursor:pointer;}
+.slideshow2_imgs_navigation:active, .slideshow2_thumb_navigation:active{cursor: -webkit-grabbing;}
+.slideshow2_navima{
+	padding: 0.3em 0.3em 0.1em;
+	display: block;
+	width: 22px;
+	float: left;
+	font-size: 10px;
+	margin: 6px 0 6px 4px;
+	height: 22px;
+	text-align: center;
+	border: 1px solid #f1f1f1;
+	border-radius: 3px;
+	color: white !important;
+	text-indent: 0 !important;
+}
+.slideshow2_hoverClass{border-color:#d1d1d1 !important;}
+.slideshow2_navima:active,.slideshow2_navima:hover{border-color:#f1f1f1;}
+.slideshow2_navima .fa-2x{font-size: 2em !important;}
+.slideshow2_cap{
+	background-color:rgba(113, 113, 113, 0.41);
+	height:40px;	
+	display: inline-table;
+	width: 100%;
+	max-width: none !important;
+}
+.slideshow2_thumb_selected{
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	border:1px solid black;
+	opacity:1;
+}
+.slideshow2_thumb_div{
+	width:60px;
+	height:60px;
+	border-radius:3px;
+	margin:1px !important;
+	float:left;
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	opacity:0;
+	transition: opacity .3s ease-in;
+}
+.slideshow2_thumb_div img, .slideshow2_old_imgs{display:none;}
+.lazyLoaderBg{background-image: url("loading.gif"); background-size:inherit !important}

@@ -1,0 +1,311 @@
+/* CSS Document */
+
+body
+{
+margin:0px;
+padding:0px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:13px;
+font-weight:normal;
+text-decoration:none;
+color:#636363;
+}
+
+.back
+{
+background:#506CAF url(../images/blue_bg.jpg) left top no-repeat;
+width:1003px;
+height:990px;
+}
+
+.top_image1
+{
+background:url(../images/images_01.gif) left top no-repeat;
+width:295px;
+height:105px;
+}
+
+.top_image2
+{
+background:url(../images/images_03.gif) left top no-repeat;
+width:397px;
+height:105px;
+}
+
+
+
+.top_image3
+{
+background:url(../images/images_04.gif) left top no-repeat;
+width:295px;
+height:47px;
+}
+
+.top_image4
+{
+background:url(../images/images_05.gif) left top no-repeat;
+width:311px;
+height:47px;
+}
+
+.top_image5
+{
+color:#FFB136;
+font-size:14px;
+font-weight:bold;
+padding-left:50px;
+width:349px;
+height:47px;
+}
+
+.toll_free_head
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:22px;
+font-weight:bold;
+text-decoration:none;
+padding-top:12px;
+color:#ffffff;
+}
+
+.logo_image
+{
+background:url(../images/logo_image.gif) left top no-repeat;
+width:383px;
+height:170px;
+}
+
+.car_image
+{
+background:url(../images/car_image.gif) left top no-repeat;
+width:302px;
+height:170px;
+}
+
+.car_image1
+{
+background: url(../images/car_image1.gif) left top no-repeat;
+width:274px;
+height:170px;
+}
+
+.website
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:normal;
+text-decoration:none;
+line-height:20px;
+padding-top:100px;
+padding-left:30px;
+padding-right:5px;
+color:#000000;
+}
+
+.center_line_bg
+{
+background:url(../images/center_line_bg.gif) left top repeat-y;
+width:959px;
+}
+
+.footer_bg
+{
+background:url(../images/footer_line.gif) left top no-repeat;
+width:959px;
+height:19px;
+}
+
+.link_line
+{
+background:url(../images/link_line.gif) left top repeat-x;
+height:26px;
+}
+
+.home_link
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:normal;
+text-decoration:none;
+color:#838383;
+}
+
+.home_link:hover
+{
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:normal;
+text-decoration:none;
+color:#333333;
+}
+
+.inner_top_line
+{
+background:url(../images/inner_top_line.gif) left top no-repeat;
+width:618px;
+height:9px;
+}
+
+.inner_footer_line
+{
+background: url(../images/inner_footer_line.gif) left top no-repeat;
+width:618px;
+height:9px;
+}
+
+.inner_center_line
+{
+background: url(../images/inner_center_line.gif) left top repeat-y;
+width:618px;
+}
+
+.wel_head
+{
+font-family: Arial, Helvetica, sans-serif;
+font-size:15px;
+font-weight:bold;
+text-decoration:none;
+color:#6A6969;
+}
+
+
+.wel_text
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+text-decoration:none;
+line-height:17px;
+color:#808080;
+}
+
+.wel_text1
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+text-decoration:underline;
+color:#000000;
+}
+
+.wel_text1:hover
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+text-decoration:underline;
+color:#25478F;
+}
+
+.right_bg
+{
+background:url(../images/right_bg.gif) left top no-repeat;
+height:27px;
+}
+
+.right_center_line
+{
+background:url(../images/right_center_line.gif) left top repeat-y;
+width:299px;
+}
+
+.right_footer
+{
+background:url(../images/right_footer_line.gif) left top no-repeat;
+height:7px;
+}
+
+.city_name
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:bold;
+text-decoration:none;
+text-align:center;
+line-height:17px;
+color:#808080;
+}
+
+.city_name_text
+{
+font-family: Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:none;
+text-decoration:none;
+line-height:17px;
+color:#6E6E6E;
+}
+
+.white_head
+{
+font-family: Arial, Helvetica, sans-serif;
+font-size:15px;
+font-weight:bold;
+text-decoration:none;
+padding-left:10px;
+color:#ffffff;
+}
+
+
+.footer_link
+{
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+text-decoration:none;
+border-right:1px solid #DBDBDB;
+padding-right:10px;
+padding-left:10px;
+color:#EAEAEA;
+}
+
+.footer_link:hover
+{
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+text-decoration:none;
+border-right:1px solid #DBDBDB;
+padding-right:10px;
+padding-left:10px;
+color:#A8C4FF;
+}
+
+
+.footer_last_link
+{
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+text-decoration:none;
+padding-right:10px;
+padding-left:10px;
+color:#EAEAEA;
+}
+
+.footer_last_link:hover
+{
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+text-decoration:none;
+padding-right:10px;
+padding-left:10px;
+color:#A8C4FF;
+}
+
+.copy_right
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+text-align:center;
+text-decoration:none;
+padding-top:7px;
+padding-bottom:15px;
+color:#EAEAEA;
+}
+
+
+
+

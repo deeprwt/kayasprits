@@ -1,0 +1,36 @@
+@import url(../scripts/style/awesome.css);
+@import url(../scripts/style/tables.css);
+@import url(../scripts/style/innova.css);
+/* ezg */
+body,td,p{vertical-align:top;}
+body,td,pre{background: #FFFFFF;font-size:11px !important;font-family:verdana, geneva, arial, helvetica, sans-serif !important;color:#000000 !important;color:#000000 !important;}
+a,a:link,a:visited{font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;color:#808080;}
+.normal{font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;color:#000000;}
+.sub{font: 9px Verdana, Geneva, Arial, Helvetica, sans-serif;color:#000000;}
+.L{font: 15px Verdana, Geneva, Arial, Helvetica, sans-serif;color:#000000;}
+.XL{font: 16px Verdana, Geneva, Arial, Helvetica, sans-serif;color:#000000;}
+.XXL{font: 19px Verdana, Geneva, Arial, Helvetica, sans-serif;color:#000000;}
+.heading{font: 18px 'Calibri',Candara,Optima,Arial,sans-serif;color:#ffffff;}
+.news_heading{font: 16px 'Calibri',Candara,Optima,Arial,sans-serif;color:#ffffff;}
+.menu{font: 15px 'Raleway';color:#5b5b5b;}
+.footer{font: 13px 'Raleway';color:#e8ca62;}
+.Heading_black{font: 14px 'Raleway';color:#414141;}
+.media_rss{font: 17px 'Calibri',Candara,Optima,Arial,sans-serif;color:#717171;}
+.big_Heading{font: 24px 'Roboto Slab';color:#ffffff;}
+.dark_heding{font: 20px 'Philosopher';color:#202020;}
+.black_heding{font: 20px 'Calibri',Candara,Optima,Arial,sans-serif;color:#030303;}
+.42565.7950892824{font: 8px 'Times New Roman', Times, serif;color:#d4d0ad;}
+h1,h1 a{font: bold 19px Verdana, Geneva, Arial, Helvetica, sans-serif;color:#000000;}
+h2,h2 a{font: 16px 'Raleway';color:#010101;}
+h3,h3 a{font: 14px 'Raleway';color:#d4d0ad;}
+h4,h4 a{font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;color:#000000;}
+h5,h5 a{font: 17px 'Calibri',Candara,Optima,Arial,sans-serif;color:#717171;}
+h6,h6 a{font: 16px 'Calibri',Candara,Optima,Arial,sans-serif;color:#4c4c4c;}
+.multibox{}
+
+/* ezg-end */
+
+
+      
+
+

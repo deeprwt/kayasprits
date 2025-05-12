@@ -1,0 +1,86 @@
+[templates]EN
+CS
+FR
+DA
+DE
+NO
+PT
+ES
+RU
+BP[END]
+
+
+
+[keys]
+settings|mails log|logout[admin]|logout|administration|profile|sitemap|date|page|recipient/from|subject/message/attachments|status|remove|sent|re-send|clear log MSG|clear log|failed|success
+[end]
+
+[keys_user]
+
+[end]
+
+[EN]
+settings=settings
+mails log=mails log
+logout[admin]=logout[admin]
+logout=logout
+administration=administration
+profile=profile
+date=date
+page=page
+recipient/from=recipient/from
+subject/message/attachments=subject/message/attachments
+status=status
+remove=remove
+sent=sent
+sitemap=sitemap
+re-send=re-send
+clear log MSG=clear log MSG
+clear log=clear log
+failed=failed
+success=success
+[END]
+
+[FR]
+administration=Administration
+clear log MSG=Vider l'historique des messages
+clear log=Vider l'historique
+date=Date
+failed=Échec
+logout[admin]=Déconnexion [Admin]
+logout=Déconnexion
+mails log=Historique des courriels
+page=Page
+profile=Profil
+recipient/from=destinataire/de
+remove=Supprimer
+re-send=Renvoyer
+sent=Envoyé
+settings=Paramètres
+sitemap=Plan du site
+status=Statut
+subject/message/attachments=Objet/Message/Pièces jointes
+success=Succès
+[END]
+
+
+[BP]
+settings=Configurações
+mails log=E-mails log
+logout[admin]=Sair[administração]
+logout=Sair
+administration=Administração
+profile=Perfil
+date=Data
+page=Página
+recipient/from=remetente/de
+subject/message/attachments=assunto/mensagem/anexos
+status=Status
+remove=Remover
+sitemap=Mapa do site
+sent=Enviar
+re-send=Re-enviar
+clear log MSG=Limpar log MSG
+clear log=Limpar log
+failed=Falhou
+success=Enviado

@@ -1,0 +1,98 @@
+/*
+
+ SoundManager 2: "page as playlist" example
+ ------------------------------------------
+ http://schillmania.com/projects/soundmanager2/
+
+*/
+
+.playlist{font: 14px verdana,arial,tahoma,"sans serif";}
+.spectrum-container{display:none;}
+ul.use-spectrum li.sm2_playing .spectrum-container{position:absolute;left:0px;top:0px;margin-left:-266px;margin-top:-1px;display:block;background-color:#5588bb;border:1px solid #99ccff;border-radius:4px;}
+ul.use-spectrum .spectrum-box {position:relative;width:255px;font-size:1em;padding:2px 0px;height:1.2em;overflow:hidden;}
+ul.use-spectrum .spectrum-box .spectrum {position:absolute;left:0px;top:-2px;margin-top:20px;display:block;font-size:1px;width:1px;height:1px;overflow:hidden;background-color:#fff;}
+ul.playlist {list-style-type:none;margin:0px;padding:0px;width:209px;}
+ul.playlist li {margin-bottom:1px;position:relative;display:block;width:auto;color:#fff;border:1px solid #000;padding:2px 4px;letter-spacing:-1px;border-radius:2px;background:#242424;-webkit-transition-property: hover;-webkit-transition: background-color 0.15s ease-in-out;-moz-transition: background-color 0.15s linear 0s;-o-transition-property: background-color;-o-transition-duration: 0.15s;}
+
+ul.playlist li a {display:block;text-decoration:none;font-weight:normal;color:#ffffff;font-size:12px;outline:none;position:relative;z-index:2;}
+ul.playlist li.sm2_playing,ul.playlist li.sm2_paused,ul.playlist li.sm2_playing a {color:#fff;}
+
+ul.playlist li:hover {background-color:#eee;}
+ul.playlist li:hover a {color:#333;}
+ul.playlist li.sm2_playing,ul.playlist li.sm2_playing:hover {background-color:#333333;}
+ul.playlist li.sm2_paused {background-color:#999;}
+ul.playlist li.sm2_playing:hover a,ul.playlist li.sm2_paused a {color:#fff;}
+ul.playlist li .controls {display:none;}
+
+ul.playlist li .peak,ul.playlist.use-peak li .peak {display:none;position:absolute;top:2px;right:4px;height:11px; width:17px;}
+
+ul.playlist li.sm2_playing .controls,ul.playlist li.sm2_paused .controls {position:relative;display:block;}
+ul.playlist.use-peak li.sm2_playing .peak,ul.playlist.use-peak li.sm2_paused .peak {display:inline;display:inline-block;}
+ul.playlist.use-peak li .peak {display:none; /* IE 7 */}
+ul.playlist li.sm2_paused .controls {background-color:#666;}
+
+ul.playlist li:hover .controls .statusbar {position:relative;cursor:ew-resize; cursor:-moz-grab; cursor:grab;}
+ul.playlist li.sm2_paused .controls .statusbar {background-color:#ccc;}
+ul.playlist li .controls {position:relative;margin-top:0.25em; margin-bottom:0px;background-color:#333333;}
+
+ul.playlist li .controls .statusbar{position:relative;height: 5px;background:#666666;border: 1px solid #444444;border-radius:2px;overflow:hidden;cursor:-moz-grab;cursor:grab;}
+
+ul.playlist li .controls.dragging .statusbar{cursor:-moz-grabbing;cursor:grabbing;}
+ul.playlist li .controls .statusbar .position,ul.playlist li .controls .statusbar .loading,ul.playlist li .controls .statusbar .annotation {position:absolute; left:0px; top:0px; height:5px;}
+ul.playlist li .controls .statusbar .position {background:#666666;border-right:3px solid #444444;border-radius:3px;}
+ul.playlist li.sm2_paused .controls .statusbar .position {background-color:#666;border-color:#666;}
+ul.playlist li .controls .statusbar .loading {background-color:#444444;}
+ul.playlist li .controls .statusbar .position,ul.playlist li .controls .statusbar .loading {width:0px;}
+ul.playlist li.sm2_playing a.sm2_link,ul.playlist li.sm2_paused a.sm2_link{margin-right:76px;}
+
+ul.playlist li .timing {position:absolute;display:none;right:28px;top:2px;height:11px;padding:2px;background-color:#222222;border:1px solid #444444;border-radius:2px;font: 10px monaco,"VT-100","lucida console",courier,system;}
+
+ul.playlist li:hover .timing {z-index:2;}
+ul.playlist li .timing div.sm2_timing {margin:0px;padding:0px;margin-top:-1em;}
+ul.playlist li.sm2_playing .timing,ul.playlist li.sm2_paused .timing {display:block;}
+ul.playlist li.sm2_paused .timing .sm2_position {text-decoration:blink;}
+ul.playlist li.sm2_paused .timing,ul.playlist.use-peak li.sm2_paused .peak {background-color:#888;border-color:#ccc;}
+ul.playlist.use-peak li .peak {display:none;zoom:1;border:1px solid #444444;padding:2px;border-radius:2px;background:#222222;}
+ul.playlist.use-peak li .peak-box {position:relative;width:100%;height:11px;overflow:hidden;}
+
+ul.playlist li .peak .l,ul.playlist li .peak .r{position:absolute;left:0px;top:0px;width:7px;height:50px;background:#999999;border:1px solid #444;border-radius:1px;margin-top:1em;}
+ul.playlist li .peak .l {margin-right:1px;}
+ul.playlist li .peak .r {left:10px;}
+#control-template {display:none;}
+ul.playlist li a,ul.playlist li a:hover{background:transparent;line-height:15px;}
+html.isSafari ul.playlist.use-peak li .peak{margin-top:-4px; /* dumb tweak */}
+ul.playlist li .peak .l {margin-right:0px;}
+ul.playlist li .peak .l,ul.playlist li .peak .r {width:6px;}
+ul.playlist li .peak .r {left:9px;}
+
+ul.playlist li a.not-supported {text-decoration:line-through;color:#666; opacity:0.25;}
+
+.c2 ul.playlist li a {margin:0px;padding:0px;letter-spacing: -0.02em;}
+ul.inline-playlist { min-height:49px; min-width:512px; margin-top:4em;}
+ul.inline-playlist li { float:left; display:inline; width:45%; margin-right:0.25%;}
+
+body.home .sm2-inline-list .ui360-vis {margin-right:0px;}
+body.home .columnar .c2 p {font-size: 1.1em;line-height:1.6em;color:#333;}
+body.home .c2 ul.playlist li a {_color:#000; /* stupid IE */}
+body.home .c2 ul.playlist li.sm2_paused a,body.home .c2 ul.playlist li.sm2_playing a {_color:#fff; /* argh */}
+body.home .c2 ul.standard { _margin-left:1.5em;}
+body.home .ie6sucks { _background: transparent !important; _display: none !important;}
+body.home .ie7sucks { *display: none !important;}
+
+#sm2-container {position: absolute;width: 1px;height: 1px;overflow: hidden;_overflow: hidden;}
+#sm2-container object,#sm2-container embed {width: 48px;height: 48px;max-width: 48px;max-height: 48px;}
+#sm2-container.swf_timedout {position: relative;width: 48px;height: 48px;}
+#sm2-container.swf_timedout,#sm2-container.swf_timedout object,#sm2-container.swf_timedout embed {min-width: 48px;min-height: 48px;}
+#sm2-container.swf_unblocked {width: 1px;height: 1px;}
+#sm2-container.swf_loaded object,#sm2-container.swf_loaded embed,#sm2-container.swf_unblocked object,#sm2-container.swf_unblocked embed {left: -9999em;top: -9999em;}
+#sm2-container.swf_error {display: none;}
+#sm2-container.high_performance,#sm2-container.high_performance.swf_timeout {position: absolute;position: fixed;}
+#sm2-container.high_performance {overflow: hidden; _top: -9999px; /* IE 6 hax, no position:fixed */
+ _left: -9999px;bottom: 0px;left: 0px;z-index: 99;}
+
+#sm2-container.high_performance.swf_loaded,#sm2-container.high_performance.swf_unblocked {z-index: auto;}
+#sm2-container.high_performance.swf_loaded,#sm2-container.high_performance.swf_unblocked,#sm2-container.high_performance.swf_unblocked object,#sm2-container.high_performance.swf_unblocked embed {height: 8px;width: 8px;}
+#sm2-container.high_performance.swf_loaded {top: auto;bottom: 0px;left: 0px;}
+#sm2-container.high_performance.swf_loaded object,#sm2-container.high_performance.swf_loaded embed,#sm2-container.high_performance.swf_unblocked object,#sm2-container.high_performance.swf_unblocked embed {left: auto;top: auto;}
+#sm2-container.high_performance.swf_timedout {z-index: 99;}
+.playlist .desc{padding-top:2px;}

@@ -1,0 +1,112 @@
+/*
+    Document   : livbiew
+    Created on : Nov 19, 2013, 6:49:55 PM
+    Author     : Joe
+*/
+
+root {display: block;}
+
+/* basic css */
+body{font-family: Tahoma; font-size: smaller;}
+.mediafolder {width:30%;margin: 0px auto;border-radius: 2px;background: #438791;text-align: center;
+			  min-height: 25px;line-height: 25px;word-break: break-all;}
+.fileuploader{border:dashed 0.3em #ccc; text-align: left;margin-bottom:0.2em;width:auto;}
+#resizeVal{width:35px;}
+#progress_report_bar{width: 100%;margin: 0 auto;display: none;}
+#progress_report_status{font-style: italic;}
+#drop-zone{border-bottom: dashed 1px;margin: 2em;padding-bottom:4px;}
+.dZoneLabel{font-size: 2em;text-transform: uppercase; line-height: 1.5em;}
+.listheading{display:none;
+	width:100%;
+	border-radius: 5px 5px 0 0;
+	background: #438791;
+	margin-top: 10px;
+	padding:5px 0;
+	font-weight: bold;}
+.mediacheck{width:10%;text-align: center;float: left;}
+.mediadata{width: 50%; text-align: left; float: left;}
+.mediastatus{width:20%; text-align: center; float: left;}
+.mediafile{width:100%; padding: 5px 0;}
+.padded{padding: 10px 0;}
+.entryhref{color:inherit;text-decoration: none;cursor: pointer;position:relative;}
+.mediaimg{width:100px; float:left;}
+.mediatext{float:left; margin-left: 5px;font:11px Verdana;}
+.entrynavElem{text-decoration: underline; cursor: pointer;}
+.listfooter{width:100%; border-radius: 0 0 5px 5px; background: #438791;margin-bottom: 10px; padding:5px 0;display:none;}
+.delete_btn{margin-left: 5px;}
+.addFldr_btn{margin-left: 5px;}
+.img-thumb{max-width:100px;}
+.hovered{background: #438791;}
+.hidden{visibility: hidden;}
+.gone{display: none;}
+.clear-both{clear: both;}
+.libview_stack{margin-left: 0.3em;font-size: 1.5em;}
+.libview_level_up{margin-top: 0.1em;left: 0.1em;}
+.w99{position:relative;}
+.locationArea{float: left; line-height: 24px;margin-left:12px;}
+
+/* video styles */
+.vjs-default-skin { color: #14777d; }
+.vjs-default-skin .vjs-play-progress,
+.vjs-default-skin .vjs-volume-level { background-color: #4d6573 }
+.vjs-default-skin .vjs-control-bar {font-size: 150%;}
+.vjs-default-skin .vjs-big-play-button { background: rgba(255,255,255,0.7) }
+.vjs-default-skin .vjs-slider { background: rgba(255,255,255,0.2333333333333333) }
+
+.video_container{margin: 1em auto; width: 640px;}
+.image_container{position:fixed; top: 5%;left:25%; z-index: 2;border: solid 1px gray;
+border-radius: 5px;padding: 10px;background: white;}
+.image_area{margin:0 auto;}
+span.close_container{float: right; cursor: pointer;border: solid 1px gray;
+border-radius: 2px;padding: 2px 4px;margin-bottom: 5px;}
+
+/*zicon*/
+.OverlayIcon{display: none;}
+
+/* min view customization */
+.img-thumb-min{width: 20px;}
+.mediaimg-min{width: 20px; float: left;}
+.libview_folder-min{width: 1.3em;}
+.libview_level_up-min{font-size: 0.5em; top: 0; left: -0.2em;}
+
+
+/* thumb view customization */
+.mediafile-thumb{width:100px; height: 100px; padding: 10px; float: left; overflow: hidden;}
+.img-thumb-big{max-width: 150%;}
+.mediaimg-thumb{width:100%;height:100%;float:left;border: #FFF 5px solid;box-shadow: 0 1px 4px #CCC;overflow: hidden;}
+.mediadata-thumb{width: 100%;height: 100%;text-align: left;float: left;position:relative;}
+.mediastatus-thumb{width: 100%; font-size: 0.8em;}
+.mediafile-thumb .mediatext-thumb{word-break: break-all;position: absolute; visibility: hidden; width: 100px; margin: 5px; padding:2px;font-size: 10px; background: rgba(237,237,237,0.8)}
+.mediafile-thumb:hover .mediatext-thumb{visibility: visible;}
+.libview_level_up-thumb{font-size: 3em;top: 0.65em;}
+.libview_folder-thumb{font-size: 5em;}
+.libview_stack-thumb{width: 5em;height: 5em;}
+.mediadata-thumb .mediatext{margin-top: -60px;padding:2px;}
+
+.filterssection .fa{font-size: 14px !important;}
+
+/*extra css for scrolling*/
+.fileslist{padding-bottom:30px;}
+.listfooter{position:fixed; bottom: 0;width:99%;}
+
+#progress_report{position: absolute;right: 8px;top: 6px;}
+#resizeZone{position:absolute;top:63px;right:23px;height:19px;}
+
+
+/* nav */
+.navigation{width: 20%; float: right;}
+.naventry{background:none; border-radius: 4px; width: 20px; text-align: center;
+		 float: left; cursor: pointer;}
+.activeNav{background: #CEE2F2; font-weight: bold; text-decoration: underline;}
+
+/* filters */
+.filterssection,#libsearch{width:100%;}
+.typeFilters{float:left; margin-right: 30px;}
+.typeFilter{text-decoration: none; cursor: pointer;}
+.underlined{text-decoration: underline !important;}
+.searcharea{  position: absolute;right: 13px;top: 0;}
+.vmodes, .vmode {float: left;}
+.vmode{cursor: pointer;}
+#showMoreButton{margin:3px;}
+.fa-search{position:absolute;top:5px;right:1px;color: #939395;}
+.selectedFilter,.underlined{color:#ccc;}
